@@ -166,9 +166,9 @@ header h2{
 
 .info-desc{
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   align-items: center;
-  max-width: 90%;
+  width: 90%;
   min-width: 400px; /* to be removed */
   color: #fff;
   font-size: large;
@@ -538,7 +538,7 @@ form{
 .contact-social{
   width: 450px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
 }
 
 .contact-social > h2{
@@ -565,6 +565,7 @@ form{
   display: flex;
   width: 90%;
   justify-content: flex-end;
+  flex-flow: row nowrap;
 }
 
 .github{
@@ -881,6 +882,10 @@ footer{
     width: 90%;
   }
 
+  .info-desc{
+    min-width: 0;
+  }
+
   .info-desc p{
     width: 280px;
     font-size: 0.8rem;
@@ -888,7 +893,7 @@ footer{
   }
 
   .projects > h2{
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 
   .skills-grid{
@@ -939,10 +944,6 @@ footer{
     min-width: 75%;
     height: auto;
   }
-  
-  .contact-wrapper{
-    flex-flow: column wrap;
-  }
 
   .projects-wrapper > div > div > div > h2{
     font-size: 1rem;
@@ -957,26 +958,27 @@ footer{
   }
   
   .contact-wrapper{
-    height:600px;
-    justify-content: space-around;
-    align-items: center;
+    min-height: 520px;
   }
 
   .contact-social{
-    flex-flow: column wrap;
+    justify-content: space-around;
+    display: flex;
     align-items: center;
+    min-width: 0;
   }
 
   .contact-social > h2{
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 
   .socials{
     justify-content: center;
+    width: 100px;
   }
 
   .contact .mail-me{
-    width: 300px;
+    width: 95%;
     height: 450px;
   }
   
