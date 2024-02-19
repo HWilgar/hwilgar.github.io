@@ -65,7 +65,7 @@ header{
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  height: 75vh; /* Remove this */
+  height: 90vh; /* Remove this */
 }
 
 .header-content{
