@@ -8,46 +8,44 @@
   font-family: "Roboto",sans-serif;
 }
 
-/* NAVIGATION */
+html{
+  scroll-padding-top: 70px;
+}
 
-nav{
+.navigation{
     width: 100%;
     height: 70px;
     position: fixed;
+    top: 0;
+    background-color: #222;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #222;
-    z-index: 1;
     border-bottom: 1px solid #fff;
-    top: 0;
+    z-index: 1;
 }
 
-nav > a > img{
+.navigation > a > img{
   width: 70px;
   padding: 5px;
 }
 
-nav ul{
+.navigation > ul{
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
   width: 50%;
 }
 
-nav ul li a{
+.navigation > ul > li > a{
   text-decoration: none;
   color: #fff;
 }
 
-nav ul li:hover,
-nav ul li a:hover{
+.navigation ul li:hover,
+.navigation ul li a:hover{
   transform: scale(1.2); 
   color: #FDB143;
-}
-
-html{
-  scroll-padding-top: 70px;
 }
 
 .container{
@@ -79,12 +77,12 @@ header{
   width: 100%;
 }
 
-header h1{
+.header-content h1{
   font-size: 8.5rem;
   color: #222;
 }
 
-header h2{
+.header-content h2{
   font-size: 3.2rem;
   color: #FDB143;
   font-family: "Pathway Gothic One";
@@ -123,23 +121,20 @@ header h2{
   align-content: space-evenly;
 }
 
-.about-me h2{
-  color: #fff;
+.about-me > h2,
+.projects > h2,
+.contact-social > h2{
   font-size: 7rem;
   font-weight: bold;
-  padding-bottom: 10px;
   user-select: none;
+}
+
+.about-me > h2{
+  color: #fff;
 }
 
 .dot{
   color:#FDB143;
-}
-
-.about-me .info{
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  width: 80%;
 }
 
 .info-desc{
@@ -166,9 +161,9 @@ header h2{
 }
 
 .full-name{
+  font-family: "Maitree";
   font-weight: bold;
   color:#fff;
-  font-family: "Maitree";
 }
 
 /* SKILLS */
@@ -276,10 +271,6 @@ header h2{
 
 .projects > h2{
   color: #fff;
-  font-size: 7rem;
-  font-weight: bold;
-
-  user-select: none;
 }
 
 .projects-wrapper{
@@ -288,51 +279,6 @@ header h2{
   justify-content: center;
   align-content: center; 
   width: 90%;
-}
-
-.projects > div h2{
-  font-family: "Maitree";
-}
-
-.projects-wrapper > div{
-  max-width: 40%;
-  min-width: 450px;
-  height: auto;
-  padding: 10px;
-  border-radius: 20px;
-  margin: 30px 0 auto;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  text-align: center;
-  place-items: center;
-
-}
-
-.projects-wrapper > div > div > div > h1{
-  padding-top: 10px;
-}
-
-.projects-wrapper > div > div > div ul li{
-  font-size: 12px;
-  font-family: "Roboto";
-  font-size: 16px;
-}
-
-.projects-wrapper > div > div > div ul{
-  list-style: none;
-  margin-bottom: 10px;
-}
-
-.projects-wrapper > div > div > div > a{
-  text-decoration: none;
-  background-color: #FDB143;
-  color: #fff;
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 13px;
-  padding: 5px;
-  border-radius: 5px;
 }
 
 .projects-bg{
@@ -348,14 +294,50 @@ header h2{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.projects > div h2{
+  font-family: "Maitree";
+}
+
+.projects-wrapper > div{
+  max-width: 40%;
+  min-width: 450px;
+  height: auto;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 30px 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.projects-wrapper ul{
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.projects-wrapper ul li{
+  font-size: 12px;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.projects-wrapper a{
+  text-decoration: none;
+  background-color: #FDB143;
+  color: #fff;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 /* CONTACT */
 
 .contact{
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-around;
   align-items: center;
-  align-content: space-around;
 }
 
 .contact-wrapper{
@@ -367,7 +349,7 @@ header h2{
   align-content: center;
 }
 
-.contact .mail-me{
+.mail-me{
   width: 450px;
   background-color: #222;
   height: 500px;
@@ -380,40 +362,6 @@ header h2{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-form{
-  width: 100%;
-}
-
-.form-input{
-  display: flex;
-  flex-flow: column wrap;
-  margin: 10px;
-}
-
-.mail-me h2{
-  color: #fff;
-  font-family: "Maitree";
-  font-size: 2rem;
-}
-
-.mail-me label{
-  color: #fff;
-  font-family: "Maitree";
-  text-align: left;
-}
-
-.form-input > input,
-.mail-me textarea{
-  font-size: 1rem;
-  background-color: #e6e6e6;
-  padding: 5px;
-  border-radius: 4px;
-}
-
-.form-input > input{
-  height: 2rem;
-}
-
 .contact-social{
   width: 450px;
   display: flex;
@@ -422,20 +370,6 @@ form{
 
 .contact-social > h2{
   color: #222;
-  font-size: 7rem;
-  font-weight: bold;
-  user-select: none;
-}
-
-.mail-me > a{
-  text-decoration: none;
-  background-color: #222;
-  border: 1px solid #FDB143;
-  color: #FDB143;
-  padding: 10px 20px;
-  margin-top: 15px;
-  font-size: 1.2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .socials{
@@ -457,6 +391,53 @@ form{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+form{
+  width: 100%;
+}
+
+.form-input{
+  display: flex;
+  flex-flow: column wrap;
+  margin: 10px;
+}
+
+.mail-me h2,
+.mail-me label{
+  color: #fff;
+  font-family: "Maitree";
+}
+
+.mail-me h2{
+  font-size: 2rem;
+}
+
+.mail-me label{
+  text-align: left;
+}
+
+.form-input > input,
+.mail-me textarea{
+  font-size: 1rem;
+  background-color: #e6e6e6;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.form-input > input{
+  height: 2rem;
+}
+
+.mail-me > a{
+  text-decoration: none;
+  background-color: #222;
+  border: 1px solid #FDB143;
+  color: #FDB143;
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 footer{
   height: 70px;
   background-color: #222;
@@ -469,21 +450,22 @@ footer{
 
 @media only screen and (min-width: 768px) and (max-width: 1020px){
 
-  nav ul{
+  .navigation ul{
     width: 60%;
   }
 
-  header h1{
+  .header-content h1{
     font-size: 6.6rem;
   }
 
-  header h2{
+  .header-content h2{
     font-size: 3rem;
   }
 
-  .about-me h2{
+  .about-me h2,
+  .projects > h2,
+  .contact-social > h2{
     font-size: 5.5rem;
-    padding-bottom: 10px;
   }
 
   .about-me .quote{
@@ -493,10 +475,6 @@ footer{
   
   .info-desc p{
     font-size: 1.3rem;
-  }
-
-  .projects > h2{
-    font-size: 5.5rem;
   }
 
   .skill-grid-item img{
@@ -530,7 +508,7 @@ footer{
   }
 
   .contact-wrapper{
-    min-height:750px;
+    min-height:700px;
     justify-content: space-around;
     align-items: center;
   }
@@ -544,33 +522,31 @@ footer{
     justify-content: center;
   }
 
-  .contact-social > h2{
-    font-size: 5.5rem;
-  }
+
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px){
-  nav > a > img{
+  .navigation > a > img{
     width: 68px;
   }
   
-  nav{
+  .navigation{
     justify-content: space-evenly;
   }
   
-  nav ul{
+  .navigation ul{
     width: 75%;
   }
   
-  nav ul li{
+  .navigation ul li{
     font-size: 0.9rem;
   }
 
-  header h1{
+  .header-content h1{
     font-size: 4.1rem;
   }
 
-  header h2{
+  .header-content h2{
     font-size: 1.8rem;
   }
 
@@ -667,8 +643,8 @@ footer{
   }
   
   .contact-wrapper{
-    min-height:595px;
-    justify-content: space-around;
+    min-height: 620px;
+    justify-content: space-evenly;
     align-items: center;
   }
 
@@ -714,29 +690,29 @@ footer{
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
-  nav > a > img{
+  .navigation > a > img{
     width: 65px;
   }
 
-  nav{
+  .navigation{
     justify-content: space-evenly;
   }
   
-  nav ul{
+  .navigation ul{
     width: 80%;
   }
   
-  nav ul li{
+  .navigation ul li{
     font-size: 0.6rem;
     margin-left:5px;
   }
 
-  header h1{
+  .header-content h1{
     font-size: 2.7rem;
   }
 
-  header h2{
-    font-size: 1.2rem;
+  .header-content h2{
+    font-size: 1.1rem;
   }
 
   .about-wrapper{
@@ -833,7 +809,8 @@ footer{
   }
   
   .contact-wrapper{
-    min-height: 520px;
+    min-height: 550px;
+    align-content: space-evenly;
   }
 
   .contact-social{
