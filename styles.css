@@ -32,7 +32,7 @@ nav ul{
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
-  width: 40%;
+  width: 50%;
 }
 
 nav ul li a{
@@ -661,7 +661,7 @@ footer{
   }
   
   .contact-wrapper{
-    height:600px;
+    min-height:595px;
     justify-content: space-around;
     align-items: center;
   }
@@ -848,7 +848,7 @@ footer{
   }
 
   .contact .mail-me{
-    width: 95%;
+    width: 90%;
     height: 450px;
   }
   
