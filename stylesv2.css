@@ -130,7 +130,6 @@ header h2{
   flex-flow: column;
   align-items: center;
   /* border-radius: 15px; */
-  max-height: 120vh;
   /* align-content: center; */
   padding-bottom: 20px;
   /* padding-top: 70px; */
@@ -538,7 +537,7 @@ form{
 .contact-social{
   width: 450px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
 }
 
 .contact-social > h2{
@@ -966,6 +965,7 @@ footer{
     display: flex;
     align-items: center;
     min-width: 0;
+    flex-flow: row nowrap;
   }
 
   .contact-social > h2{
