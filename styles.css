@@ -165,6 +165,12 @@ header h2{
   font-size: 1.4rem;
 }
 
+.full-name{
+  font-weight: bold;
+  color:#FDB143;
+  font-family: "Maitree";
+}
+
 /* SKILLS */
 
 .skills-grid{
