@@ -550,6 +550,10 @@ footer{
     font-size: 3.5rem;
   }
 
+  .about-me > h2{
+    margin-bottom: 5px;
+  }
+
   .quote{
     font-size: 4rem;
     margin-top: -70px;
@@ -706,6 +710,10 @@ footer{
   .projects > h2,
   .contact-social > h2{
     font-size: 2rem;
+  }
+
+  .about-me > h2{
+    margin-bottom: 5px;
   }
 
   .quote{
