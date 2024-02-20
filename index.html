@@ -9,42 +9,42 @@
     </head>
     <body>
         <div class="container">
-            <nav class="navigation">
+            <nav class="navigation bgcolor-primary">
                 <a href="#"><img src="images/mito-logo.png" alt="My Logo"></a>
                 <ul>
-                    <li><a href="#about-me">ABOUT ME</a></li>
-                    <li><a href="#resume">RESUME</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="https://hwilgar.hashnode.dev/css-grid-a-bootcampers-pov" target="_blank">BLOG</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a class="secondary-color" href="#about-me">ABOUT ME</a></li>
+                    <li><a class="secondary-color" href="#resume">RESUME</a></li>
+                    <li><a class="secondary-color" href="#projects">PROJECTS</a></li>
+                    <li><a class="secondary-color" href="https://hwilgar.hashnode.dev/css-grid-a-bootcampers-pov" target="_blank">BLOG</a></li>
+                    <li><a class="secondary-color" href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
-            <header id="header">
+            <header id="header" class="bgcolor-secondary">
                 <div class="header-content">
                     <div>
-                        <h1>w<span class="i">i</span>lgar car<span class="i">i</span>no</h1>
+                        <h1 class="primary-color">w<span class="i accent-color">i</span>lgar car<span class="i accent-color">i</span>no</h1>
                     </div>
                     <div class="webdev-box">
-                        <h2>Full-Stack Web Developer</h2>
+                        <h2 class="accent-color">Full-Stack Web Developer</h2>
                     </div>
                 </div>
             </header>
 
-            <section class="about-me" id="about-me">
-                <h2>about me<span class="dot">.</span></h2>
+            <section class="about-me bgcolor-primary" id="about-me">
+                <h2 class="secondary-color">about me<span class="accent-color">.</span></h2>
                 <div class="about-wrapper">
-                    <div class="info-desc">
+                    <div class="info-desc secondary-color">
                         <span class="quote">&#8222;</span>
                         <p>Good day, I am <span class="full-name">Herwilgar Carino</span>. I aspire to use my skills in web development and experience in art to build and design unique web applications. I am passionate and ready for great opportunities that will enchance my skills in web development and challenge me in learning new technologies."</p>
                     </div>
-                    <div class="skills-grid">
-                        <div class="skill-web-dev skill-grid-item"><p>Web Development</p></div>
-                        <div class="skill-m-media skill-grid-item"><p>Multimedia</p></div>
-                        <div class="skill-html skill-grid-item"><img src="images/html-logo.png" alt="Html Logo"></div>
-                        <div class="skill-css skill-grid-item"><img src="images/css-logo.png" alt="Css Logo"></div>
-                        <div class="skill-jscript skill-grid-item"><img src="images/js-logo.png" alt="Javascript Logo"></div>
-                        <div class="skill-illustrator skill-grid-item"><img src="images/ai-logo.png" alt="Illustrator Logo"></div>
-                        <div class="skill-ppro skill-grid-item"><img src="images/pr-logo.png" alt="Premiere Pro Logo"></div>
+                    <div class="skills-grid secondary-color">
+                        <div class="skill-grid-item"><p class="accent-color">Web Development</p></div>
+                        <div class="skill-grid-item"><p class="accent-color">Multimedia</p></div>
+                        <div class="skill-grid-item"><img class="skill-icon skill-icon-bg" src="images/html-logo.png" alt="Html Logo"></div>
+                        <div class="skill-grid-item"><img class="skill-icon skill-icon-bg" src="images/css-logo.png" alt="Css Logo"></div>
+                        <div class="skill-grid-item"><img class="skill-icon skill-icon-bg" src="images/js-logo.png" alt="Javascript Logo"></div>
+                        <div class="skill-grid-item"><img class="skill-icon skill-icon-bg" src="images/ai-logo.png" alt="Illustrator Logo"></div>
+                        <div class="skill-grid-item"><img class="skill-icon skill-icon-bg" src="images/pr-logo.png" alt="Premiere Pro Logo"></div>
                         <p>HTML</p>
                         <p>CSS</p>
                         <p>Javascript</p>
@@ -54,15 +54,15 @@
                 </div>
             </section>
 
-            <section class="resume" id="resume">
-                <a class="btn" href="./images/wilgar-resume.pdf" target="_blank" rel="noreferrer"><img src="images/download-icon.png" alt="Download">View Resume</a>
+            <section class="resume bgcolor-secondary" id="resume">
+                <a class="btn secondary-color bgcolor-primary" href="./images/wilgar-resume.pdf" target="_blank" rel="noreferrer"><img src="images/download-icon.png" alt="Download">View Resume</a>
             </section>
 
-            <section class="projects" id="projects">
-                <h2>projects<span class="dot">.</span></h2>
+            <section class="projects bgcolor-primary" id="projects">
+                <h2 class="secondary-color">projects<span class="accent-color">.</span></h2>
                 <div class="projects-wrapper">
                     <div class="project-bright-future">
-                        <div class="projects-bg">
+                        <div class="project-container bgcolor-secondary">
                             <img src="images/bright-future.png" alt="Bright-Future-Page">
                             <div class="bright-future-info">
                                 <h2>Bright Future Page</h2>
@@ -70,12 +70,12 @@
                                     <li>Web responsive</li>
                                     <li>Responsive images</li>
                                 </ul>
-                                <a href="https://github.com/HWilgar/ProjCompile/tree/main/Bright-Future-Page" target="_blank">CHECK CODES</a>
+                                <a class="secondary-color bgcolor-accent" href="https://github.com/HWilgar/ProjCompile/tree/main/Bright-Future-Page" target="_blank">CHECK CODES</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-pasuyo-center">
-                        <div class="projects-bg">
+                        <div class="project-container bgcolor-secondary">
                             <img src="images/pasuyo-center.png" alt="Pasuyo-Center-Page">
                             <div class="pasuyo-center-info">
                                 <h2>Pasuyo Center Page</h2>
@@ -83,12 +83,12 @@
                                     <li>Web responsive</li>
                                     <li>Grid and Flexibox</li>
                                 </ul>
-                                <a href="https://github.com/HWilgar/ProjCompile/tree/main/Pasuyo-Center-Page" target="_blank">CHECK CODES</a>
+                                <a class="secondary-color bgcolor-accent" href="https://github.com/HWilgar/ProjCompile/tree/main/Pasuyo-Center-Page" target="_blank">CHECK CODES</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-e-commerce">
-                        <div class="projects-bg">
+                        <div class="project-container bgcolor-secondary">
                             <img src="images/e-commerce-page.png" alt="E-Commerce-Page">
                             <div class="e-commerce-info">
                                 <h2>E-Commerce Page</h2>
@@ -96,12 +96,12 @@
                                     <li>Table Manipulation</li>
                                     <li>Html Challenge</li>
                                 </ul>
-                                <a href="https://github.com/HWilgar/ProjCompile/tree/main/E-Commerce-Page" target="_blank">CHECK CODES</a>
+                                <a class="secondary-color bgcolor-accent" href="https://github.com/HWilgar/ProjCompile/tree/main/E-Commerce-Page" target="_blank">CHECK CODES</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-first-aboutme">
-                        <div class="projects-bg">
+                        <div class="project-container bgcolor-secondary">
                             <img src="images/first-aboutme-page.png" alt="My-First-AboutMe-Page">
                             <div class="first-aboutme-info">
                                 <h2>My First About Me Page</h2>
@@ -109,49 +109,49 @@
                                     <li>Web responsive</li>
                                     <li>Bootstrap</li>
                                 </ul>
-                                <a href="https://github.com/HWilgar/ProjCompile/tree/main/My-First-AboutMe-Page" target="_blank">CHECK CODES</a>
+                                <a class="secondary-color bgcolor-accent" href="https://github.com/HWilgar/ProjCompile/tree/main/My-First-AboutMe-Page" target="_blank">CHECK CODES</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="contact" id="contact">
+            <section class="contact bgcolor-secondary" id="contact">
                 <div class="contact-wrapper">
                     <div class="contact-social">
-                        <h2>contact<span class="dot">.</span></h2>
+                        <h2 class="primary-color">contact<span class="accent-color">.</span></h2>
                         <div class="socials">
                             <div class="github">
-                                <a href="https://github.com/HWilgar" target="_blank"><img src="images/github-logo.png" alt="Github Logo"></a>
+                                <a href="https://github.com/HWilgar" target="_blank"><img class="socials-icon-color" src="images/github-logo.png" alt="Github Logo"></a>
                             </div>
                             <div class="linkedin">
-                                <a href="https://www.linkedin.com/in/wilgar-carino-2598602b5/" target="_blank"><img src="images/linkedin-logo.png" alt="LinkedIn Logo"></a>
+                                <a href="https://www.linkedin.com/in/wilgar-carino-2598602b5/" target="_blank"><img class="socials-icon-color" src="images/linkedin-logo.png" alt="LinkedIn Logo"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="mail-me">
-                        <h2>Get in touch.</h2>
+                    <div class="mail-me bgcolor-primary">
+                        <h2 class="secondary-color">Get in touch.</h2>
                         <form action="">
                             <div class="form-input">
-                                <label for="name">Name:</label>
+                                <label class="secondary-color" for="name">Name:</label>
                                 <input type="text" id="name" name="nickname" autocomplete="off">
                             </div>
                             <div class="form-input">
-                                <label for="email">Email:</label>
+                                <label class="secondary-color" for="email">Email:</label>
                                 <input type="email" id="email" name="email-address" autocomplete="off">
                             </div>
                             <div class="form-input">
-                                <label for="message">Message:</label>
+                                <label class="secondary-color" for="message">Message:</label>
                                 <textarea name="messages" id="message" rows="6"></textarea>
                             </div>
                         </form>
-                        <a href="mailto:hwgcarino@gmail.com">SUBMIT</a>
+                        <a class="accent-color bgcolor-primary" href="mailto:hwgcarino@gmail.com">SUBMIT</a>
                     </div>
                 </div>
             </section>
 
-            <footer>
-                <span>2024 &#169; WilgarCarino</span>
+            <footer class="bgcolor-primary">
+                <span class="secondary-color">2024 &#169; WilgarCarino</span>
             </footer>
         </div>
     </body>
